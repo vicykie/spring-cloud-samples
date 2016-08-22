@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: books-service
+server:
+  port: 9913
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
