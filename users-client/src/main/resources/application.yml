@@ -12,3 +12,9 @@ eureka:
     healthCheckUrlPath: ${management.context-path}/health
 management:
   context-path: /management
+logging:
+  level:
+    org:
+      vicykie:
+        service:
+          UsersService: DEBUG

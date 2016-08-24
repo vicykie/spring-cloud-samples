@@ -15,11 +15,13 @@ public class UserService {
         List<User> users = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             User user = new User();
-            user.setAddress("address "+ i);
+            user.setId(i);
+            user.setAddress("地址 "+ i);
             user.setIcon("icon "+ i);
-            user.setName("name "+ i);
+            user.setName("姓名 "+ i);
             users.add(user);
         }
+        System.out.println(1/0);
         return users;
     }
 }
