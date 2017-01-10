@@ -1,4 +1,4 @@
-package org.vicykie;
+package org.vicykie.fallback;
 
 import org.springframework.stereotype.Component;
 import org.vicykie.entities.User;
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by 李朝衡 on 2016/8/22.
  */
 @Component
-public class FeignFallBack implements UsersService {
+public class UserServiceFeignFallBack implements UsersService {
     @Override
     public List<User> getUsers() {
         return new ArrayList<>();

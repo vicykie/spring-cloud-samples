@@ -21,7 +21,7 @@ public class UserService {
             user.setName("姓名 "+ i);
             users.add(user);
         }
-        System.out.println(1/0);
+//        System.out.println(1/0);
         return users;
     }
 }
