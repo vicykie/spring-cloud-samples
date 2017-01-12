@@ -1,17 +1,22 @@
 server:
-  port: 9909
-eureka:
-  instance:
-    hostname: configServer
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: register-server:9999/eureka
+  port: 8888
+#eureka:
+#  instance:
+#    hostname: configServer
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: register-server:9999/eureka
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/vicykie/spring-boot-config-server
+          uri: https://git.coding.net/vicykie/spring-cloud-config-server.git
+          searchPaths: configs
+          username: vicykie
+          password: 7327928
+
+
 
