@@ -1,6 +1,11 @@
 server:
   port: 9911
 spring:
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      username: admin
+      password: 123456
   application:
     name: users-client
 eureka:

@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.vicykie</groupId>
-	<artifactId>microservice-config</artifactId>
+	<artifactId>config-center</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-config</name>
+	<name>config-center</name>
 	<description>spring cloud microservice config </description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
