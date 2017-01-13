@@ -1,6 +1,7 @@
 package org.vicykie.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,10 +16,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/books")
 public class BooksCTL {
+    @Value("${app.name}")
+    private String appName;
     @Autowired
     private BooksService booksService;
+
     @RequestMapping(method = RequestMethod.GET)
-    public List<Book> getAll(){
-       return booksService.getAll();
+    public List<Book> getAll() {
+        System.out.println(appName);
+        return booksService.getAll();
     }
 }

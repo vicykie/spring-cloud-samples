@@ -6,6 +6,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+      username: admin
+      password: 123456
 eureka:
   instance:
     hostname: localhost
